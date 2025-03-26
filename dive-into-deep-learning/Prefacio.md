@@ -11,6 +11,27 @@ Propusemo-nos a criar um recurso que pudesse (i) estar disponível gratuitamente
 
 Às vezes, para evitar repetição desnecessária, encapsulamos as funções, classes, etc. importadas e mencionadas com frequência neste livro no package d2l. Para qualquer bloco, como uma função, uma classe ou vários imports ser salvo no pacote, vamos marcá-lo com # @ save. Oferecemos uma visão geral detalhada dessas funções e classes em: numref: sec_d2l. O package d2l é leve e requer apenas os seguintes packages e módulos como dependências:
 
+```
+#@save
+import collections
+import hashlib
+import math
+import os
+import random
+import re
+import shutil
+import sys
+import tarfile
+import time
+import zipfile
+from collections import defaultdict
+import pandas as pd
+import requests
+from IPython import display
+from matplotlib import pyplot as plt
+
+d2l = sys.modules[__name__]
+```
 
 ## 💡 Definições
 * **Trabalho:** é a atividade essencial para a geração de `Riqueza`;
@@ -50,6 +71,4 @@ Propusemo-nos a criar um recurso que pudesse (i) estar disponível gratuitamente
 
 
 _A ideia do Saldo é de que haja uma divergência positiva e crescente da renda em relação às despesas no tempo._
-```
-Rendimento = Total Investido / (Total Investido + Retorno)
-```
+

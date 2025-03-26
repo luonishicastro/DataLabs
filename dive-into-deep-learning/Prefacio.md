@@ -65,10 +65,5 @@ d2l = sys.modules[__name__]
   - **Risco Calculado:** probabilidade de um resultado ou ganhos reais de um `Investimento` sejam diferentes de um resultado ou `Retorno Esperado`;
 
 
-
-## 🧮 Fórmulas
-### Medidas de Controle Financeiro
-
-
 _A ideia do Saldo é de que haja uma divergência positiva e crescente da renda em relação às despesas no tempo._
 

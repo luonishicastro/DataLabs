@@ -9,6 +9,7 @@ Propusemo-nos a criar um recurso que pudesse (i) estar disponível gratuitamente
 
 ![image](https://github.com/user-attachments/assets/e34d70ed-ba2a-4281-9620-b93e22502307)
 
+Às vezes, para evitar repetição desnecessária, encapsulamos as funções, classes, etc. importadas e mencionadas com frequência neste livro no package d2l. Para qualquer bloco, como uma função, uma classe ou vários imports ser salvo no pacote, vamos marcá-lo com # @ save. Oferecemos uma visão geral detalhada dessas funções e classes em: numref: sec_d2l. O package d2l é leve e requer apenas os seguintes packages e módulos como dependências:
 
 
 ## 💡 Definições

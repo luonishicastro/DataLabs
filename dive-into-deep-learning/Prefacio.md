@@ -7,6 +7,10 @@ Propusemo-nos a criar um recurso que pudesse (i) estar disponível gratuitamente
 
 ### Conteúdo e Estrutura
 
+![image](https://github.com/user-attachments/assets/e34d70ed-ba2a-4281-9620-b93e22502307)
+
+
+
 ## 💡 Definições
 * **Trabalho:** é a atividade essencial para a geração de `Riqueza`;
   - **Moeda:** é um meio de troca de recursos;

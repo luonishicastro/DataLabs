@@ -69,8 +69,5 @@ A notação usada ao longo deste livro é resumida a seguir.
   - **Lançamentos:** uma matrix;
 
 
-_A ideia do Saldo é de que haja uma divergência positiva e crescente da renda em relação às despesas no tempo._
-
-
 ## 🦕 Introdução
 

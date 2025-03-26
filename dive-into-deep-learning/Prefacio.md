@@ -1,10 +1,7 @@
 referência: https://pt.d2l.ai/chapter_preface/index.html
 
+# 💸 Prefácio
 Apenas alguns anos atrás, não havia legiões de cientistas de deep learning desenvolvendo produtos e serviços inteligentes em grandes empresas e startups. Quando o mais jovem entre nós (os autores) entrou no campo, o machine learning não comandava as manchetes dos jornais diários. Nossos pais não faziam ideia do que era machine learning, muito menos por que podemos preferir isso a uma carreira em medicina ou direito. Machine learning era uma disciplina acadêmica voltada para o futuro com um conjunto restrito de aplicações do mundo real. E essas aplicações, por exemplo, reconhecimento de voz e visão computacional, exigiam tanto conhecimento de domínio que muitas vezes eram considerados como áreas inteiramente separadas para as quais o aprendizado de máquina era um pequeno componente. Redes neurais, então, os antecedentes dos modelos de aprendizagem profunda nos quais nos concentramos neste livro, eram considerados ferramentas obsoletas.
-
-
-# 💸 Finanças Pessoais
-O objetivo primordial deste projeto é de construir uma base de conhecimentos e ferramentas intuitivas que eu possa usar no dia a dia para controlar minhas Finanças pessoais.
 
 ## 💡 Definições
 * **Trabalho:** é a atividade essencial para a geração de `Riqueza`;

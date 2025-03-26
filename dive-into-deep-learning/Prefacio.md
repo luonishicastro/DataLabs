@@ -33,6 +33,35 @@ from matplotlib import pyplot as plt
 d2l = sys.modules[__name__]
 ```
 
+A maior parte do código neste livro é baseada no Apache MXNet. MXNet é um framework de código aberto (oper-source) para deep learning e a escolha preferida de AWS (Amazon Web Services), bem como muitas faculdades e empresas. Aqui está como importamos módulos do MXNet.
+```
+#@save
+from mxnet import autograd, context, gluon, image, init, np, npx
+from mxnet.gluon import nn, rnn
+```
+
+A maior parte do código neste livro é baseada no PyTorch. PyTorch é uma estrutura de código aberto para deep learning, que é extremamente popular na comunidade de pesquisa. Aqui está como importamos módulos do PyTorch.
+```
+#@save
+import numpy as np
+import torch
+import torchvision
+from PIL import Image
+from torch import nn
+from torch.nn import functional as F
+from torch.utils import data
+from torchvision import transforms
+```
+
+A maior parte do código deste livro é baseada no TensorFlow. TensorFlow é uma estrutura de código aberto para deep learning, que é extremamente popular na comunidade de pesquisa e na indústria. Aqui está como importamos módulos do TensorFlow.
+```
+#@save
+import numpy as np
+import tensorflow as tf
+```
+
+
+
 ## 💡 Definições
 * **Trabalho:** é a atividade essencial para a geração de `Riqueza`;
   - **Moeda:** é um meio de troca de recursos;

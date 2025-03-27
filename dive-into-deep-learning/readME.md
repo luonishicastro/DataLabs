@@ -1,8 +1,10 @@
+[^1]: aqui - prfácio
+[^2]: aqui - introdução
+
 referência: https://pt.d2l.ai/chapter_preface/index.html
 
 
-[^1]: aqui - prfácio
-[^2]: aqui - introdução
+
 
 
 [^1]

@@ -64,7 +64,8 @@ import tensorflow as tf
 A notação usada ao longo deste livro é resumida a seguir.
 
 * **Números:**
-  - **Moeda:** um escalar;
+  - <img width="14" alt="image" src="https://github.com/user-attachments/assets/9e1b3e91-600f-4ff0-8018-be84c4e66ae2" />
+ um escalar;
   - **Lastro:** um vetor;
   - **Lançamentos:** uma matrix;
 

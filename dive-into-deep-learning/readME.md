@@ -78,8 +78,6 @@ Em cada um desses casos, mesmo programadores de elite são incapazes de codifica
 
 Imagine apenas escrever um programa para responder a uma palavra de alerta como “Alexa”, “OK Google” e “Hey Siri”. Tente codificar em uma sala sozinho com nada além de um computador e um editor de código. Como você escreveria tal programa a partir dos primeiros princípios? Pense nisso … o problema é difícil. A cada segundo, o microfone irá coletar aproximadamente 44.000 amostras. Cada amostra é uma medida da amplitude da onda sonora. Que regra poderia mapear de forma confiável, de um trecho de áudio bruto a previsões confiáveis { yes, no } sobre se o trecho de áudio contém a palavra de ativação? Se você estiver travado, não se preocupe. Também não sabemos escrever tal programa do zero. É por isso que usamos o machine learning.
 
-<img width="386" alt="image" src="https://github.com/user-attachments/assets/b82b8083-4a4c-44a3-b504-d372aaffe623" />
-
 ![image](https://github.com/user-attachments/assets/80b7346d-1fec-425c-8e73-dc617dd25a9d)
 
 

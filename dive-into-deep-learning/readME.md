@@ -100,3 +100,5 @@ Como você pode imaginar, se apenas definirmos todos os botões aleatoriamente, 
 Para resumir, em vez de codificar um reconhecedor de palavra de acionamento, nós codificamos um programa que pode aprender a reconhecê-las se o apresentarmos com um grande dataset rotulado. Você pode pensar neste ato de determinar o comportamento de um programa apresentando-o com um __dataset como programação com dados__. Quer dizer, podemos “programar” um detector de gatos, fornecendo nosso sistema de aprendizado de máquina com muitos exemplos de cães e gatos. Dessa forma, o detector aprenderá a emitir um número positivo muito grande se for um gato, um número negativo muito grande se for um cachorro, e algo mais próximo de zero se não houver certeza, e isso é apenas a ponta do iceberg do que o machine learning pode fazer. Deep learning, que iremos explicar em maiores detalhes posteriormente, é apenas um entre muitos métodos populares para resolver problemas de machine learning.
 
 ### Componentes chave
+
+#### Dados

@@ -101,4 +101,11 @@ Para resumir, em vez de codificar um reconhecedor de palavra de acionamento, nó
 
 ### Componentes chave
 
+Em nosso exemplo de palavra de ativação, descrevemos um `dataset` consistindo em trechos de áudio e labels binários, e nós demos uma sensação ondulante de como podemos treinar um modelo para aproximar um mapeamento de áudios para classificações. Esse tipo de problema, onde tentamos prever um `label` desconhecido designado com base em entradas conhecidas dado um conjunto de dados que consiste em exemplos para os quais os rótulos são conhecidos, é chamado de `aprendizagem supervisionada`. Esse é apenas um entre muitos tipos de problemas de machine learning. Posteriormente, mergulharemos profundamente em diferentes problemas de machine learning. Primeiro, gostaríamos de lançar mais luz sobre alguns componentes principais que nos acompanharão, independentemente do tipo de problema de machine learning que enfrentarmos:
+
+1. Os `dados` com os quais podemos aprender.
+2. Um `modelo` de como transformar os dados.
+3. Uma `função objetivo` que quantifica o quão bem (ou mal) o modelo está indo.
+4. Um `algoritmo` para ajustar os parâmetros do modelo para otimizar a função obejtivo.
+
 #### Dados

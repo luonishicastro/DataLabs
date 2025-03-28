@@ -157,4 +157,6 @@ Informalmente, o processo de aprendizagem se parece com o seguinte. Primeiro, pe
 
 ![image](https://github.com/user-attachments/assets/1f9de33c-1212-4b63-8dec-2608f708409d)
 
+
 <ins>Regressão</ins>
+Talvez a tarefa de aprendizagem supervisionada mais simples para entender é regressão. Considere, por exemplo, um conjunto de dados coletados de um banco de dados de vendas de casas. Podemos construir uma mesa, onde cada linha corresponde a uma casa diferente, e cada coluna corresponde a algum atributo relevante, como a metragem quadrada de uma casa, o número de quartos, o número de banheiros e o número de minutos (caminhando) até o centro da cidade. Neste conjunto de dados, cada exemplo seria uma casa específica, e o vetor de recurso correspondente seria uma linha na tabela. Se você mora em Nova York ou São Francisco, e você não é o CEO da Amazon, Google, Microsoft ou Facebook, o vetor de recursos (metragem quadrada, nº de quartos, nº de banheiros, distância a pé) para sua casa pode ser algo como: $ [56, 1, 1, 60] $. No entanto, se você mora em Pittsburgh, pode ser parecido com $ [279, 4, 3, 10] $. Vetores de recursos como este são essenciais para a maioria dos algoritmos clássicos de machine learning.

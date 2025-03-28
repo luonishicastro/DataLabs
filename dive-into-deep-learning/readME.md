@@ -122,5 +122,13 @@ Geralmente, quanto mais dados temos, mais fácil se torna nosso trabalho. Quando
 Por fim, não basta ter muitos dados e processá-los com inteligência. Precisamos dos dados certos. Se os dados estiverem cheios de erros, ou se os recursos escolhidos não são preditivos da quantidade alvo de interesse, o aprendizado vai falhar. A situação é bem capturada pelo clichê: entra lixo, sai lixo. Além disso, o desempenho preditivo ruim não é a única consequência potencial. Em aplicativos sensíveis de machine learning, como policiamento preditivo, triagem de currículo e modelos de risco usados ​​para empréstimos, devemos estar especialmente alertas para as consequências de dados inúteis. Um modo de falha comum ocorre em conjuntos de dados onde alguns grupos de pessoas não são representados nos dados de treinamento. Imagine aplicar um sistema de reconhecimento de câncer de pele na natureza que nunca tinha visto pele negra antes. A falha também pode ocorrer quando os dados não apenas sub-representem alguns grupos mas refletem preconceitos sociais. Por exemplo, se as decisões de contratação anteriores forem usadas para treinar um modelo preditivo que será usado para selecionar currículos, então os modelos de aprendizado de máquina poderiam inadvertidamente capturar e automatizar injustiças históricas. Observe que tudo isso pode acontecer sem o cientista de dados conspirar ativamente, ou mesmo estar ciente.
 
 #### Modelos
+A maior parte do machine learning envolve transformar os dados de alguma forma. Talvez queiramos construir um sistema que ingere fotos e preveja sorrisos. Alternativamente, podemos querer ingerir um conjunto de leituras de sensor e prever quão normais ou anômalas são as leituras. Por modelo, denotamos a maquinaria computacional para ingestão de dados de um tipo, e cuspir previsões de um tipo possivelmente diferente. Em particular, estamos interessados ​​em modelos estatísticos que podem ser estimados a partir de dados. Embora os modelos simples sejam perfeitamente capazes de abordar problemas apropriadamente simples, os problemas nos quais nos concentramos neste livro, ampliam os limites dos métodos clássicos. O deep learning é diferenciado das abordagens clássicas principalmente pelo conjunto de modelos poderosos em que se concentra. Esses modelos consistem em muitas transformações sucessivas dos dados que são encadeados de cima para baixo, daí o nome deep learning. No caminho para discutir modelos profundos, também discutiremos alguns métodos mais tradicionais.
+
 
 #### Funções Objetivo
+
+#### Algoritmos de Otimização
+
+### Tipos de Problemas de Machine Learning
+
+#### Aprendizagem Supervisionada

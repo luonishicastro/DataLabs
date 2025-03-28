@@ -157,4 +157,4 @@ Informalmente, o processo de aprendizagem se parece com o seguinte. Primeiro, pe
 
 ![image](https://github.com/user-attachments/assets/1f9de33c-1212-4b63-8dec-2608f708409d)
 
-<sub>Regressão</sub>
+<ins>Regressão</ins>

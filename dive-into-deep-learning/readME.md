@@ -109,3 +109,4 @@ Em nosso exemplo de palavra de ativação, descrevemos um `dataset` consistindo 
 4. Um `algoritmo` para ajustar os parâmetros do modelo para otimizar a função obejtivo.
 
 #### Dados
+Nem é preciso dizer que você não pode fazer ciência de dados sem dados. Podemos perder centenas de páginas pensando no que exatamente constitui os dados, mas por agora, vamos errar no lado prático e focar nas principais propriedades com as quais se preocupar. Geralmente, estamos preocupados com uma coleção de exemplos. Para trabalhar com dados de maneira útil, nós tipicamente precisamos chegar a uma representação numérica adequada. Cada exemplo (__ou ponto de dados, instância de dados, amostra__) normalmente consiste em um conjunto de atributos chamados `recursos (ou covariáveis)`, a partir do qual o modelo deve fazer suas previsões. Nos problemas de aprendizagem supervisionada acima, a coisa a prever é um atributo especial que é designado como o `rótulo (label) (ou alvo)`.

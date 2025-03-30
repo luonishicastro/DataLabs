@@ -158,7 +158,6 @@ Informalmente, o processo de aprendizagem se parece com o seguinte. Primeiro, pe
 ![image](https://github.com/user-attachments/assets/1f9de33c-1212-4b63-8dec-2608f708409d)
 
 
-
 <ins>Regressão</ins>
 
 Talvez a tarefa de aprendizagem supervisionada mais simples para entender é regressão. Considere, por exemplo, um conjunto de dados coletados de um banco de dados de vendas de casas. Podemos construir uma mesa, onde cada linha corresponde a uma casa diferente, e cada coluna corresponde a algum atributo relevante, como a metragem quadrada de uma casa, o número de quartos, o número de banheiros e o número de minutos (caminhando) até o centro da cidade. Neste conjunto de dados, cada exemplo seria uma casa específica, e o vetor de recurso correspondente seria uma linha na tabela. Se você mora em Nova York ou São Francisco, e você não é o CEO da Amazon, Google, Microsoft ou Facebook, o vetor de recursos (metragem quadrada, nº de quartos, nº de banheiros, distância a pé) para sua casa pode ser algo como: $ [56, 1, 1, 60] $. No entanto, se você mora em Pittsburgh, pode ser parecido com $ [279, 4, 3, 10] $. Vetores de recursos como este são essenciais para a maioria dos algoritmos clássicos de machine learning.
@@ -178,3 +177,13 @@ Na classificação, queremos que nosso modelo analise os recursos, por exemplo, 
 Por razões que abordaremos à medida que o livro se torna mais técnico, pode ser difícil otimizar um modelo que só pode produzir uma tarefa categórica difícil, por exemplo, “gato” ou “cachorro”. Nesses casos, geralmente é muito mais fácil expressar nosso modelo na linguagem das probabilidades. Dados os recursos de um exemplo, nosso modelo atribui uma probabilidade para cada classe possível. Voltando ao nosso exemplo de classificação animal onde as classes são { gato, cachorro }, um classificador pode ver uma imagem e gerar a probabilidade que a imagem é um gato como 0,9. Podemos interpretar esse número dizendo que o classificador tem 90% de certeza de que a imagem representa um gato. A magnitude da probabilidade para a classe prevista transmite uma noção de incerteza. Esta não é a única noção de incerteza e discutiremos outros em capítulos mais avançados.
 
 Quando temos mais de duas classes possíveis, chamamos o problema de `classificação multiclasse`. Exemplos comuns incluem reconhecimento de caracteres escritos à mão { 0,1,2,...,9,a,b,c,... }. Enquanto atacamos problemas de regressão tentando minimizar a função de perda de erro quadrático, a função de perda comum para problemas de classificação é chamada de `entropia cruzada (cross-entropy)`, cujo nome pode ser desmistificado por meio de uma introdução à teoria da informação nos capítulos subsequentes.
+
+A classificação pode ser muito mais complicada do que apenas classificação binária, multi-classe ou mesmo com vários rótulos. Por exemplo, existem algumas variantes de classificação para abordar hierarquias. As hierarquias assumem que existem alguns relacionamentos entre as muitas classes. Portanto, nem todos os erros são iguais — se devemos errar, preferiríamos classificar incorretamente para uma classe parecida em vez de uma classe distante. Normalmente, isso é conhecido como `classificação hierárquica`.
+
+<ins>Tags</ins>
+
+Alguns problemas de classificação se encaixam perfeitamente nas configurações de classificação binária ou multiclasse. Por exemplo, podemos treinar um classificador binário normal para distinguir gatos de cães. Dado o estado atual da visão computacional, podemos fazer isso facilmente, com ferramentas disponíveis no mercado. No entanto, não importa o quão preciso seja o nosso modelo, podemos ter problemas quando o classificador encontra uma imagem dos Músicos da Cidade de Bremen, um conto de fadas alemão popular com quatro animais.
+
+![Uploading image.png…]()
+
+Como você pode ver, há um gato, e um galo, um cachorro e um burro, com algumas árvores ao fundo. Dependendo do que queremos fazer com nosso modelo em última análise, tratando isso como um problema de classificação binária pode não fazer muito sentido. Em vez disso, podemos dar ao modelo a opção de dizer que a imagem retrata um gato, um cachorro, um burro, e um galo.

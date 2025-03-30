@@ -184,6 +184,6 @@ A classificação pode ser muito mais complicada do que apenas classificação b
 
 Alguns problemas de classificação se encaixam perfeitamente nas configurações de classificação binária ou multiclasse. Por exemplo, podemos treinar um classificador binário normal para distinguir gatos de cães. Dado o estado atual da visão computacional, podemos fazer isso facilmente, com ferramentas disponíveis no mercado. No entanto, não importa o quão preciso seja o nosso modelo, podemos ter problemas quando o classificador encontra uma imagem dos Músicos da Cidade de Bremen, um conto de fadas alemão popular com quatro animais.
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/50dc3898-0fa1-4357-a431-b9cd77b9897f)
 
 Como você pode ver, há um gato, e um galo, um cachorro e um burro, com algumas árvores ao fundo. Dependendo do que queremos fazer com nosso modelo em última análise, tratando isso como um problema de classificação binária pode não fazer muito sentido. Em vez disso, podemos dar ao modelo a opção de dizer que a imagem retrata um gato, um cachorro, um burro, e um galo.

@@ -235,3 +235,56 @@ Muitos problemas relacionados surgem em outras tarefas de aprendizagem. Por exem
 
 #### Aprendizagem Não Supervisionada
 
+Todos os exemplos até agora foram relacionados à aprendizagem supervisionada, ou seja, situações em que alimentamos o modelo com um conjunto de dados gigante contendo os recursos e os valores de rótulo correspondentes. Você pode pensar no aluno supervisionado como tendo um trabalho extremamente especializado e um chefe extremamente banal. O chefe fica por cima do seu ombro e lhe diz exatamente o que fazer em todas as situações até que você aprenda a mapear as de situações para ações. Trabalhar para um chefe assim parece muito chato. Por outro lado, é fácil agradar a esse chefe. Você apenas reconhece o padrão o mais rápido possível e imita suas ações.
+
+De uma forma completamente oposta, pode ser frustrante trabalhar para um chefe que não tem ideia do que eles querem que você faça. No entanto, se você planeja ser um cientista de dados, é melhor se acostumar com isso. O chefe pode simplesmente entregar a você uma pilha gigante de dados e dizer para fazer ciência de dados com eles! Isso parece vago porque é. Chamamos essa classe de problemas de aprendizagem não supervisionada, e o tipo e número de perguntas que podemos fazer é limitado apenas pela nossa criatividade. Abordaremos técnicas de aprendizado não supervisionado nos capítulos posteriores. Para abrir seu apetite por enquanto, descrevemos algumas das seguintes perguntas que você pode fazer.
+
+- Podemos encontrar um pequeno número de protótipos que resumem os dados com precisão? Dado um conjunto de fotos, podemos agrupá-las em fotos de paisagens, fotos de cachorros, bebês, gatos e picos de montanhas? Da mesma forma, dada uma coleção de atividades de navegação dos usuários, podemos agrupá-los em usuários com comportamento semelhante? Esse problema é normalmente conhecido como `clusterização`.
+
+- Podemos encontrar um pequeno número de parâmetros que capturam com precisão as propriedades relevantes dos dados? As trajetórias de uma bola são muito bem descritas pela velocidade, diâmetro e massa da bola. Os alfaiates desenvolveram um pequeno número de parâmetros que descrevem a forma do corpo humano com bastante precisão com o propósito de ajustar roupas. Esses problemas são chamados de `estimativa de subespaço`. Se a dependência for linear, é chamada de `análise de componentes principais (principal component analysis — PCA)`.
+
+- Existe uma representação de objetos (estruturados arbitrariamente) no espaço euclidiano de modo que as propriedades simbólicas podem ser bem combinadas? Isso pode ser usado para descrever entidades e suas relações, como “Roma” - “Itália” + “França” = “Paris”.
+
+- Existe uma descrição das causas comuns de muitos dos dados que observamos? Por exemplo, se tivermos dados demográficos sobre preços de casas, poluição, crime, localização, educação e salários, podemos descobrir como eles estão relacionados simplesmente com base em dados empíricos? Os campos relacionados com `causalidade` e `modelos gráficos probabilísticos` resolvem este problema.
+
+- Outro importante e empolgante desenvolvimento recente na aprendizagem não supervisionada é o advento de `redes adversárias geradoras`. Isso nos dá uma maneira processual de sintetizar dados, até mesmo dados estruturados complicados, como imagens e áudio. Os mecanismos estatísticos subjacentes são testes para verificar se os dados reais e falsos são iguais.
+
+#### Interagindo com um Ambiente
+
+Até agora, não discutimos de onde os dados realmente vêm, ou o que realmente acontece quando um modelo de machine learning gera uma saída. Isso ocorre porque o aprendizado supervisionado e o aprendizado não supervisionado não tratam dessas questões de uma forma muito sofisticada. Em qualquer caso, pegamos uma grande pilha de dados antecipadamente, em seguida, colocamos nossas máquinas de reconhecimento de padrões em movimento sem nunca mais interagir com o ambiente novamente. Porque todo o aprendizado ocorre depois que o algoritmo é desconectado do ambiente, isso às vezes é chamado de aprendizagem offline. Para aprendizagem supervisionada, o processo considerando a coleta de dados de um ambiente se parece com
+
+![image](https://github.com/user-attachments/assets/c1b0130c-94cc-49a6-b631-1e9336d3c934)
+
+Esta simplicidade de aprendizagem offline tem seus encantos. A vantagem é que podemos nos preocupar com o reconhecimento de padrões isoladamente, sem qualquer distração desses outros problemas. Mas a desvantagem é que a formulação do problema é bastante limitadora. Se você é mais ambicioso, ou se cresceu lendo a série Robot de Asimov, então você pode imaginar bots com inteligência artificial, capazes não só de fazer previsões, mas também de realizar ações no mundo. Queremos pensar em `agentes` inteligentes, não apenas em modelos preditivos. Isso significa que precisamos pensar sobre como escolher ações, não apenas fazendo previsões. Além disso, ao contrário das previsões, ações realmente impactam o meio ambiente. Se quisermos treinar um agente inteligente, devemos levar em conta a maneira como suas ações podem impactar as observações futuras do agente.
+
+Considerando a interação com um ambiente abre todo um conjunto de novas questões de modelagem. A seguir estão apenas alguns exemplos.
+
+- O ambiente lembra o que fizemos anteriormente?
+- O ambiente quer nos ajudar, por exemplo, um usuário lendo texto em um reconhecedor de fala?
+- O ambiente quer nos derrotar, ou seja, um ambiente adversário, como filtragem de spam (contra spammers) ou um jogo (contra um oponente)?
+- O ambiente não se preocupa?
+- O ambiente tem mudanças dinâmicas? Por exemplo, os dados futuros sempre se parecem com o passado ou os padrões mudam com o tempo, naturalmente ou em resposta às nossas ferramentas automatizadas?
+
+Esta última questão levanta o problema de `mudança de distribuição`, quando os dados de treinamento e teste são diferentes. É um problema que a maioria de nós já experimentou ao fazer exames escritos por um professor, enquanto a lição de casa foi composta por seus assistentes de ensino.
+
+#### Aprendizado por Reforço
+
+Se você estiver interessado em usar o machine learning para desenvolver um agente que interaja com um ambiente e tome medidas, então você provavelmente vai acabar com foco na aprendizagem por reforço. Isso pode incluir aplicações para robótica, para sistemas de diálogo, e até mesmo para desenvolver inteligência artificial (IA) para videogames. `Aprendizagem por reforço profundo`, que se aplica deep learning para problemas de aprendizagem de reforço, aumentou em popularidade. A revolucionária deep Q-netfowk que derrotou os humanos nos jogos da Atari usando apenas a entrada visual, e o programa AlphaGo que destronou o campeão mundial no jogo de tabuleiro Go são dois exemplos proeminentes.
+
+A aprendizagem por reforço fornece uma declaração muito geral de um problema, em que um agente interage com um ambiente ao longo de uma série de etapas de tempo. Em cada etapa de tempo, o agente recebe alguma observação do ambiente e deve escolher uma ação que é posteriormente transmitido de volta para o ambiente por meio de algum mecanismo (às vezes chamado de atuador). Por fim, o agente recebe uma recompensa do meio ambiente. O agente então recebe uma observação subsequente, e escolhe uma ação subsequente e assim por diante. O comportamento de um agente de aprendizagem por reforço é governado por uma política. Em suma, uma política é apenas uma função que mapeia das observações do ambiente às ações. O objetivo da aprendizagem por reforço é produzir uma boa política.
+
+![image](https://github.com/user-attachments/assets/2887a79c-5a3d-4d5b-9b72-0a3043f92f3e)
+
+É difícil exagerar a generalidade da estrutura de aprendizagem por reforço. Por exemplo, podemos lançar qualquer problema de aprendizado supervisionado como um problema de aprendizado por reforço. Digamos que tenhamos um problema de classificação. Poderíamos criar um agente de aprendizagem por reforço com uma ação correspondente a cada classe. Poderíamos então criar um ambiente que oferecesse uma recompensa que era exatamente igual à função de perda do problema original de aprendizagem supervisionada.
+
+Dito isso, o aprendizado por reforço também pode resolver muitos problemas que a aprendizagem supervisionada não pode. Por exemplo, na aprendizagem supervisionada, sempre esperamos se a entrada de treinamento venha associada ao label correto. Mas na aprendizagem por reforço, não assumimos que para cada observação o ambiente nos diz a ação ideal. Em geral, apenas recebemos alguma recompensa. Além disso, o ambiente pode nem mesmo nos dizer quais ações levaram à recompensa.
+
+Considere, por exemplo, o jogo de xadrez. O único sinal de recompensa real vem no final do jogo quando ganhamos, o que podemos atribuir a uma recompensa de 1, ou quando perdemos, o que podemos atribuir uma recompensa de -1. Assim, os agentes de reforço devem lidar com o `problema de atribuição de crédito`: determinar quais ações devem ser creditadas ou culpadas por um resultado. O mesmo vale para o funcionário que for promovido no dia 11 de outubro. Essa promoção provavelmente reflete um grande número de ações bem escolhidas em relação ao ano anterior. Para obter mais promoções no futuro, é preciso descobrir quais ações ao longo do caminho levaram à promoção.
+
+Agentes de aprendizado por reforço também podem ter que lidar com o problema da observabilidade parcial. Ou seja, a observação atual pode não dizer-lhe tudo sobre o seu estado atual. Digamos que um robô de limpeza ficou preso em um dos muitos armários idênticos em uma casa. Inferindo a localização precisa (e, portanto, o estado) do robô pode exigir a consideração de suas observações anteriores antes de entrar no armário.
+
+Finalmente, em qualquer ponto, os agentes de reforço podem saber de uma boa política, mas pode haver muitas outras políticas melhores que o agente nunca tentou. O agente de reforço deve escolher constantemente se deve fazer um exploit com a melhor estratégia atualmente conhecida como uma política, ou um explore o espaço das estratégias, potencialmente desistindo de alguma recompensa de curto prazo em troca de conhecimento.
+
+O problema geral de aprendizagem por reforço é uma configuração muito geral. As ações afetam as observações subsequentes. As recompensas só são observadas correspondendo às ações escolhidas. O ambiente pode ser total ou parcialmente observado. Levar em conta toda essa complexidade de uma vez pode exigir muito dos pesquisadores. Além disso, nem todo problema prático exibe toda essa complexidade. Como resultado, os pesquisadores estudaram uma série de casos especiais de problemas de aprendizagem por reforço.
+
+Quando o ambiente é totalmente observado, chamamos o problema de aprendizagem por reforço de `processo de decisão Markov`. Quando o estado não depende das ações anteriores, chamamos o problema de `problema de bandido contextual`. Quando não há estado, apenas um conjunto de ações disponíveis com recompensas inicialmente desconhecidas, este problema é o clássico `problema de bandidos multi-armados`.

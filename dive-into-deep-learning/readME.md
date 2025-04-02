@@ -288,3 +288,7 @@ Finalmente, em qualquer ponto, os agentes de reforço podem saber de uma boa pol
 O problema geral de aprendizagem por reforço é uma configuração muito geral. As ações afetam as observações subsequentes. As recompensas só são observadas correspondendo às ações escolhidas. O ambiente pode ser total ou parcialmente observado. Levar em conta toda essa complexidade de uma vez pode exigir muito dos pesquisadores. Além disso, nem todo problema prático exibe toda essa complexidade. Como resultado, os pesquisadores estudaram uma série de casos especiais de problemas de aprendizagem por reforço.
 
 Quando o ambiente é totalmente observado, chamamos o problema de aprendizagem por reforço de `processo de decisão Markov`. Quando o estado não depende das ações anteriores, chamamos o problema de `problema de bandido contextual`. Quando não há estado, apenas um conjunto de ações disponíveis com recompensas inicialmente desconhecidas, este problema é o clássico `problema de bandidos multi-armados`.
+
+### Características
+
+Até agora, falamos sobre machine learning de maneira ampla, que é tanto um ramo da IA ​​quanto uma abordagem da IA. Embora o deep learning seja um subconjunto do machine learning, o conjunto estonteante de algoritmos e aplicativos torna difícil avaliar quais podem ser os ingredientes específicos para o deep learning. Isso é tão difícil quanto tentar definir os ingredientes necessários para a pizza, uma vez que quase todos os componentes são substituíveis.

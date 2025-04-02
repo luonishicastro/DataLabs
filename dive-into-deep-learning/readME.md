@@ -214,7 +214,24 @@ Esses problemas estão entre as aplicações mais interessantes de machine learn
 
 <b>Marcação e análise.</b> Isso envolve anotar uma sequência de texto com atributos. Em outras palavras, o número de entradas e saídas é essencialmente o mesmo. Por exemplo, podemos querer saber onde estão os verbos e os sujeitos. Como alternativa, podemos querer saber quais palavras são as entidades nomeadas. Em geral, o objetivo é decompor e anotar o texto com base na estrutura e suposições gramaticais para obter algumas anotações. Isso parece mais complexo do que realmente é. Abaixo está um exemplo muito simples de uma frase anotada com marcas que indicam quais palavras se referem a entidades nomeadas (marcadas como “Ent”).
 
-'''
+```
 Tom has dinner in Washington with Sally
 Ent  -    -    -     Ent      -    Ent
-'''
+```
+<b>Reconhecimento automático de fala.</b> Com o reconhecimento de fala, a sequência de entrada é uma gravação de áudio de um alto-falante (mostrado em: numref: fig_speech), e a saída é a transcrição textual do que o locutor disse. O desafio é que existem muito mais quadros de áudio (o som é normalmente amostrado em 8kHz ou 16kHz) do que texto, ou seja, não há correspondência 1: 1 entre áudio e texto, já que milhares de amostras podem correspondem a uma única palavra falada. Estes são problemas de aprendizagem de sequência a sequência em que a saída é muito mais curta do que a entrada.
+
+![image](https://github.com/user-attachments/assets/babf5eeb-7535-4b24-b5ec-910f206dfe4c)
+
+<b>Text to Speech (Texto para fala).</b> Este é o inverso do reconhecimento automático de fala. Em outras palavras, a entrada é um texto e a saída é um arquivo de áudio. Nesse caso, a saída é muito mais longa do que a entrada. Embora seja fácil para os humanos reconhecerem um arquivo de áudio ruim, isso não é tão trivial para computadores.
+
+<b>Tradução por máquina.</b> Ao contrário do caso do reconhecimento de voz, onde correspondente entradas e saídas ocorrem na mesma ordem (após o alinhamento), na tradução automática, a inversão da ordem pode ser vital. Em outras palavras, enquanto ainda estamos convertendo uma sequência em outra, nem o número de entradas e saídas, nem o pedido de exemplos de dados correspondentes são considerados iguais. Considere o seguinte exemplo ilustrativo da tendência peculiar dos alemães para colocar os verbos no final das frases.
+
+```
+German:           Haben Sie sich schon dieses grossartige Lehrwerk angeschaut?
+English:          Did you already check out this excellent tutorial?
+Wrong alignment:  Did you yourself already this excellent tutorial looked-at?
+```
+Muitos problemas relacionados surgem em outras tarefas de aprendizagem. Por exemplo, determinar a ordem em que um usuário lê uma página da web é um problema de análise de layout bidimensional. Problemas de diálogo apresentam todos os tipos de complicações adicionais, onde determinar o que dizer a seguir requer levar em consideração conhecimento do mundo real e o estado anterior da conversa através de longas distâncias temporais. Estas são áreas ativas de pesquisa.
+
+#### Aprendizagem Não Supervisionada
+

@@ -1,2 +1,0 @@
-https://www.kaggle.com/datasets/yashsaxena005/corporate-credit-risk
-https://www.kaggle.com/datasets/agewerc/corporate-credit-rating
